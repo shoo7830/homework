@@ -6,10 +6,12 @@
 @import './mixins/pushauto';
 
 // utils
+@import './utils/spacemounts';
 @import './utils/variables';
 
 // base
 @import './base/reset';
+@import './base/typography';
 
 // layout
 
@@ -18,4 +20,3 @@
 @import './components/input';
 @import './components/select';
 @import './components/switch';
-@import './components/tab';
