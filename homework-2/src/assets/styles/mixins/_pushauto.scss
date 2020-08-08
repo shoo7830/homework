@@ -1,0 +1,7 @@
+// center
+@mixin push--auto {
+  margin: {
+      right: auto;
+      left: auto;
+  }
+}
