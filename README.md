@@ -7,7 +7,31 @@
 ### 스펙
 
 * Vue-cli
-* Vue router
-* Sass
+  * Vue.js
+  * Vue Router
+  * Sass
+* Desing Guide 참고: Element-UI
+* 가이드 페이지
+  * 실행 후 [http://localhost:8080/guide](http://localhost:8080/guide) 로 이동
 
 ### 실행
+
+1. git clone
+```
+git clone https://github.com/shoo7830/homework.git
+```
+
+2. 디렉토리 이동
+```
+cd homework-2
+```
+
+3. 의존성 파일 설치
+- Vue cli가 아 
+
+4. npm install
+```
+npm install
+```
+
+5. 실행
