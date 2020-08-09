@@ -27,17 +27,17 @@ cd homework-2
 ```
 
 3. 의존성 파일 설치
-- Vue cli가 없을 경우
+- Vue cli가 없을 경우만 실행
 ```
 npm install -g @vue/cli
 ```
 
-4. npm install
+- Vue cli가 있으면 의존성 파일 설치
 ```
 npm install
 ```
 
-5. 실행
+4. 실행
 ```
 npm run serve
 ```
