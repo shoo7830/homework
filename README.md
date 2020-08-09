@@ -10,7 +10,7 @@
   * Vue.js
   * Vue Router
   * Sass
-* Desing Guide 참고: Element-UI
+* Desing Guide 참고: [Element-UI](https://element.eleme.io/#/en-US)
 * 가이드 페이지
   * 실행 후 [http://localhost:8080/guide](http://localhost:8080/guide) 로 이동
 
@@ -27,7 +27,10 @@ cd homework-2
 ```
 
 3. 의존성 파일 설치
-- Vue cli가 아 
+- Vue cli가 없을 경우
+```
+npm install -g @vue/cli
+```
 
 4. npm install
 ```
@@ -35,3 +38,6 @@ npm install
 ```
 
 5. 실행
+```
+npm run serve
+```
