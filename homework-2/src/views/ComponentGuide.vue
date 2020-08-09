@@ -4,7 +4,7 @@
       <header>
         <h1>Components Guidelines</h1>
       </header>
-      
+
       <section id="button">
         <h2>button</h2>
         <h3>default button</h3>
