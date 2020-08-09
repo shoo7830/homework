@@ -9,7 +9,7 @@ blockquote::before, blockquote::after,q::before, q::after {content: '';}
 input,select,textarea,button {vertical-align: middle;}
 input::-ms-clear {display: none;}
 button {border: 0; background-color: transparent; cursor: pointer;}
-body {direction: ltr; -webkit-text-size-adjust: none;}
+body {direction: ltr; -webkit-text-size-adjust: none; background: #26160c;}
 body,h1,h2,h3,h4,th,td,input,select,textarea,button,a:link, a:visited, a:hover {font-family: 'Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif; line-height: 1.5; letter-spacing: -1px;}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
