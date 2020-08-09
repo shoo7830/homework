@@ -40,7 +40,6 @@
           </kp-button>
           <prism class="m-t-10">{{ buttonPrimary }}</prism>
         </div>
-        
       </section>
       <section id="input">
         <h2>input</h2>
@@ -89,7 +88,7 @@ export default {
       select: `<kp-select>
   <option>option</option>
 </kp-select> `,
-      switchCheck: `<kp-switch  /> `,
+      switchCheck: `<kp-switch  /> `
     };
   }
 };
