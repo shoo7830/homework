@@ -13,6 +13,9 @@
             <a href="#input">input</a>
           </li>
           <li>
+            <a href="#radio">radio</a>
+          </li>
+          <li>
             <a href="#select">select</a>
           </li>
           <li>
@@ -22,23 +25,49 @@
       </nav>
       <section id="button">
         <h2>button</h2>
-        <kp-button></kp-button>
-        <prism>{{ buttonHtml }}</prism>
+        <h3>default button</h3>
+        <div>
+          <kp-button>
+            <span>button</span>
+          </kp-button>
+          <prism class="m-t-10 m-b-20">{{ buttonDefault }}</prism>
+        </div>
+
+        <h3>primary button</h3>
+        <div>
+          <kp-button type="primary">
+            <span>primary button</span>
+          </kp-button>
+          <prism class="m-t-10">{{ buttonPrimary }}</prism>
+        </div>
+        
       </section>
       <section id="input">
         <h2>input</h2>
-        <kp-input></kp-input>
-        <prism>{{ buttonHtml }}</prism>
+        <h3>text</h3>
+        <kp-input placeholder="text" />
+        <prism class="m-t-10 m-b-20">{{ inputText }}</prism>
+
+        <h3>password</h3>
+        <kp-input placeholder="password" is-password />
+        <prism class="m-t-10">{{ passwordText }}</prism>
+      </section>
+      <section id="radio">
+        <h2>radio</h2>
+        <kp-radio></kp-radio>
+        <prism class="m-t-10">{{ radioButton }}</prism>
       </section>
       <section id="select">
         <h2>select</h2>
-        <kp-select></kp-select>
-        <prism>{{ buttonHtml }}</prism>
+        <kp-select>
+          <option>option</option>
+        </kp-select>
+        <prism class="m-t-10">{{ select }}</prism>
       </section>
       <section id="switch">
         <h2>switch</h2>
         <kp-switch></kp-switch>
-        <prism>{{ buttonHtml }}</prism>
+        <prism class="m-t-10 m-b-50">{{ switchCheck }}</prism>
       </section>
     </div>
   </div>
@@ -48,7 +77,19 @@
 export default {
   data() {
     return {
-      buttonHtml: `<kp-button></kp-button>`
+      buttonDefault: `<kp-button>
+  <span>button</span>
+</kp-button>`,
+      buttonPrimary: `<kp-button type="primary">
+  <span>button</span>
+</kp-button>`,
+      inputText: `<kp-input placeholder="text" /> `,
+      passwordText: `<kp-input placeholder="password" is-password /> `,
+      radioButton: `<kp-radio  /> `,
+      select: `<kp-select>
+  <option>option</option>
+</kp-select> `,
+      switchCheck: `<kp-switch  /> `,
     };
   }
 };
@@ -60,6 +101,7 @@ $guide-button-hover-bg: #333;
 $guide-button-text: #999;
 $guide-border: #ccc;
 $guide-heading2: #888;
+$guide-heading3: #4b4b4b;
 
 .layout {
   @include push--auto;
@@ -70,7 +112,7 @@ $guide-heading2: #888;
     background: $guide-button-bg;
     li {
       display: inline-flex;
-      width: 25%;
+      width: 20%;
       text-align: center;
 
       a {
@@ -101,8 +143,14 @@ $guide-heading2: #888;
     color: $guide-heading2;
   }
 
+  h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: $guide-heading3;
+  }
+
   section {
-    padding: 50px 30px 25px;
+    padding: 50px 30px 0;
     pre {
       padding: 10px;
       font-size: 14px;

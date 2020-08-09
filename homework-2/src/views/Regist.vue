@@ -82,7 +82,7 @@
                 <option value="019">019</option>
               </kp-select>
               <kp-input />
-              <kp-button size="mini">
+              <kp-button>
                 <span>인증</span>
               </kp-button>
             </dd>
@@ -90,7 +90,7 @@
         </div>
         <div class="p-t-25 p-b-100 agreement">
           <p>모든 약관 내용에 동의합니다.</p>
-          <kp-switch></kp-switch>
+          <kp-switch />
         </div>
         <kp-button type="primary">
           <span>가입하기</span>
@@ -132,7 +132,7 @@ export default {
       &:nth-of-type(1) {
         width: calc(40% - 10px);
       }
-      &:nth-of-type(2), 
+      &:nth-of-type(2),
       &:nth-of-type(3) {
         width: calc(30% - 10px);
       }
