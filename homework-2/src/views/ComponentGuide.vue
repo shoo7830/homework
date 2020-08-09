@@ -4,25 +4,7 @@
       <header>
         <h1>Components Guidelines</h1>
       </header>
-      <nav id="menu">
-        <ul>
-          <li>
-            <a href="#button">button</a>
-          </li>
-          <li>
-            <a href="#input">input</a>
-          </li>
-          <li>
-            <a href="#radio">radio</a>
-          </li>
-          <li>
-            <a href="#select">select</a>
-          </li>
-          <li>
-            <a href="#switch">switch</a>
-          </li>
-        </ul>
-      </nav>
+      
       <section id="button">
         <h2>button</h2>
         <h3>default button</h3>
