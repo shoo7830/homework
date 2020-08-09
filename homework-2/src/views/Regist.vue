@@ -148,17 +148,17 @@ export default {
       width: calc(100% - 40px);
 
       .kp-select {
-        width: calc(30% - 10px);
+        width: calc(28% - 10px);
       }
 
       .kp-input {
         margin-left: 10px;
-        width: calc(40% - 10px);
+        width: calc(52% - 10px);
       }
 
       .kp-button {
         margin-left: 10px;
-        width: calc(30% - 10px);
+        width: calc(20% - 10px);
       }
     }
   }
