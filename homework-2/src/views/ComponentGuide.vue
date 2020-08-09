@@ -22,18 +22,22 @@
       </nav>
       <section id="button">
         <h2>button</h2>
+        <kp-button></kp-button>
         <prism>{{ buttonHtml }}</prism>
       </section>
       <section id="input">
         <h2>input</h2>
+        <kp-input></kp-input>
         <prism>{{ buttonHtml }}</prism>
       </section>
       <section id="select">
         <h2>select</h2>
+        <kp-select></kp-select>
         <prism>{{ buttonHtml }}</prism>
       </section>
       <section id="switch">
         <h2>switch</h2>
+        <kp-switch></kp-switch>
         <prism>{{ buttonHtml }}</prism>
       </section>
     </div>
@@ -44,10 +48,10 @@
 export default {
   data() {
     return {
-      buttonHtml: `<kp-button>버튼이에요</kp-button>`
-    }
+      buttonHtml: `<kp-button></kp-button>`
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -60,12 +64,10 @@ $guide-heading2: #888;
 .layout {
   @include push--auto;
   max-width: 1024px;
-  
   nav {
     margin-top: 50px;
     font-size: 16px;
     background: $guide-button-bg;
-    
     li {
       display: inline-flex;
       width: 25%;
@@ -101,7 +103,6 @@ $guide-heading2: #888;
 
   section {
     padding: 50px 30px 25px;
-    
     pre {
       padding: 10px;
       font-size: 14px;

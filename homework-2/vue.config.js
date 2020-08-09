@@ -4,6 +4,7 @@ module.exports = {
       scss: {
         prependData: `@import "@/styles/main.scss";`
       }
-    }
+    },
+    sourceMap: true
   }
 };

@@ -1,0 +1,60 @@
+.kp-radio {
+  &--group {
+    width: 100%;
+    vertical-align: middle;
+    font-size: 0;
+  }
+
+  &-button {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    outline: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:first-child {
+      .kp-radio-button__inner {
+        border-radius: 4px 0 0 4px;
+      }
+    }
+
+    &:last-child {
+      .kp-radio-button__inner {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+
+    &__origin {
+      opacity: 0;
+      outline: none;
+      position: absolute;
+      z-index: -1;
+
+      &:checked {
+        + .kp-radio-button__inner {
+          color: $w-white;
+          background: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+
+    &__inner {
+      width: 100%;
+      display: inline-block;
+      padding: 12px 20px;
+      line-height: 1;
+      white-space: nowrap;
+      vertical-align: middle;
+      background: $w-white;
+      border: 1px solid $border-base;
+      text-align: center;
+      transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

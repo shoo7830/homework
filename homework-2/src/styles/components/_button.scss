@@ -1,0 +1,36 @@
+.kp-button {
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  background: $w-white;
+  border: 1px solid $border-base;
+  text-align: center;
+  outline: none;
+  transition: .1s;
+  border-radius: 4px;
+  padding: 8px 20px 9px;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: $primary-color;
+    border: 1px solid $default-hover-border;
+    background: $default-hover-bg;
+  }
+
+  &--default {
+    background: $w-white;
+  }
+
+  &--primary {
+    background: $primary-color;
+    color: $w-white;
+
+    &:hover {
+      color: $w-white;
+      border: 1px solid $primary-hover-color;
+      background: $primary-hover-color;
+    }
+  }
+
+}
